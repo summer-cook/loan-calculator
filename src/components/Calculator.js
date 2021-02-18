@@ -133,8 +133,8 @@ const extraPaymentsButton = (e) =>{
                     className='input'
                     type='text'
                     name='interest'
-                    placeholder='Interest'
-                    value={ userValues.interest }
+                    placeholder='% Interest'
+                    value= {userValues.interest}
                     onChange={ handleInputChange }
                 />
                 </Container>

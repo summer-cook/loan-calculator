@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'Sofia Pro Extra Light';
+  src: local('Sofia Pro Extra Light'), url(./fonts/SofiaProExtraLight.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+@font-face {
+    font-family: 'Sofia Pro Regular';
+    src: local('Sofia Pro Regular'), url(./fonts/SofiaProRegular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Alice Regular';
+    src: local('Alice Regular'), url(./fonts/Alice-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+  //brand colors
+    $fig-green: #EEF8EF;
+    $fig-off-white: #d3d3d3;
+    $fig-light-gray:  #e2e2e2;
+    $fig-dark-gray: #545554;
+    $fig-light-coral: #E27263;
+    $fig-dark-coral:  #DD5340;
+    $fig-dark-blue: #334D5C;
+    $fig-turquoise: #40B49E;
+    $fig-orange: #E47A36;
+
+
+  
+
+body {
+  background-color: $fig-dark-blue;
+  font-family: 'Alice Regular';
+  color: $fig-dark-gray;
+ }
+ 
+ input {
+  display: block;
+  margin: 5px 0;
+  background-color: $fig-light-gray;
+  border-radius: 4px;
+  border:none;
+  min-height:20px;
+ }
+ input:focus {
+   outline: none
+ }
+ 
+ p {
+  color: $fig-dark-gray;
+  font-size: 16px;
+ }
+
+ h1{
+  font-family: 'Sofia Pro Regular';
+  font-weight: bold;
+  color: $fig-turquoise
+ }
+
+ h4 {
+  color: $fig-dark-gray;
+ }
+
+
+@mixin form-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .calculator {
+  display: flex;
+  justify-content: center;
+ }
+ 
+ .form {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+ }
+
+.column-container{
+  @include form-flexbox
+}
+
+.payments-container{
+  @include form-flexbox;
+  border-top: 1px solid $fig-off-white;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.border-container {
+  border: 1px solid $fig-off-white;
+  border-radius: 10px;
+  padding-top: 10px;
+  min-width: 230px;
+}
+
+.extra-payments{
+  border-top: 1px solid $fig-off-white;
+  padding: 20px 20px;
+}
+
+.extra-payments-content{
+  @include form-flexbox;
+  flex-direction: column;
+  max-width:400px;
+  margin: 0 auto;
+}
+
+.hide-extra-payments-button {
+  border-bottom: 40px;
+  padding-bottom: 40px;
+}
+ 
+ .form-items {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+  padding: 20px;
+ }
+ 
+ .button {
+  background-color: $fig-turquoise;
+  font-family: 'Sofia Pro Regular';
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px $fig-dark-blue;
+  margin: 10px 0;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+ }
+  .button:hover {
+    opacity: 0.8;
+    transform: scale(.95);
+  }
+ 
+ .label {
+  font-size: 12px;
+  font-family: 'Sofia Pro Regular';
+  text-transform: uppercase;
+  color:  $fig-orange;
+  background-color: transparent;
+  border: none
+ }
+ button.label{
+   transition: .2s ease-in-out;
+ }
+  button.label:focus {
+    outline: none
+  }
+  button.label:hover {
+    opacity: 0.8;
+    transform: scale(.95);
+  }
+
+ .input {
+  font-family: 'Alice Regular';
+ }
+
+ .error {
+  color: #E27263;
+  font-size: 11px;
+  text-align: center;
+ }
+
+ .logo{
+   width: 100px;
+  height: 50px;
+ }
+ img.logo{
+   object-fit: cover;
+ }

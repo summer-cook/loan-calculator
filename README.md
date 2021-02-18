@@ -1,7 +1,5 @@
 <h1>Loan Calculator</h1>
 
-# About
-
 This project was built using create-react-app and bootstrap/reactstrap.
 
 ## Available Scripts

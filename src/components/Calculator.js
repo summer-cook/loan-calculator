@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import { Col, Row, Form, Container, Button, Input} from 'reactstrap'
-import FigLoansLogo from '../fig-loans-logo.png'
 
 const Calculator = () => {
 
@@ -113,9 +112,6 @@ const extraPaymentsButton = (e) =>{
    return (
     <Container className='calculator'>
         <Form className='form' onSubmit={handleSubmitValues}>
-        <Container className='logo'>
-        <img className='logo'msrc={FigLoansLogo} />
-        </Container>
         <h1>Loan Calculator</h1>
             <Row className='column-container'>
             <Col className='form-items'>

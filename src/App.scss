@@ -1,3 +1,5 @@
+
+//brand fonts
 @font-face {
   font-family: 'Sofia Pro Extra Light';
   src: local('Sofia Pro Extra Light'), url(./fonts/SofiaProExtraLight.woff) format('woff');
@@ -17,7 +19,7 @@
     font-style: normal;
     }
 
-  //brand colors
+//brand colors
     $fig-green: #EEF8EF;
     $fig-off-white: #d3d3d3;
     $fig-light-gray:  #e2e2e2;
@@ -30,7 +32,7 @@
 
 
   
-
+//general styles
 body {
   background-color: $fig-dark-blue;
   font-family: 'Alice Regular';
@@ -64,13 +66,14 @@ body {
   color: $fig-dark-gray;
  }
 
-
+//mixins
 @mixin form-flexbox {
   display: flex;
   justify-content: center;
   align-items: center;
  }
  
+ //calculator component
  .calculator {
   display: flex;
   justify-content: center;
@@ -173,10 +176,24 @@ body {
   text-align: center;
  }
 
+//header component
+ .header{
+   width: 100vw;
+   height: 100px;
+   border-bottom: #E47A36;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
  .logo{
-   width: 100px;
-  height: 50px;
- }
- img.logo{
-   object-fit: cover;
- }
+    width: 130px;
+    height: 75px;
+    }
+
+  .logoimg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
